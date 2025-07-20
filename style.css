@@ -1,5 +1,11 @@
 body{
-    background-color: rgb(121, 121, 137);
+    background-color: rgba(176, 165, 185, 0.954);
+    display: flex;
+    flex-direction: column;
+  justify-content: center; 
+  align-items: center;    
+  height: 100vh;          
+  margin: 0;
 }
 
 .container{
@@ -7,17 +13,55 @@ body{
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-    width: 600px;
-    height: 700px;
+    width: 500px;
+    height: 500px;
     border: 2px solid black;
     
 }
 
 .square{
-    width: 37.5px;
-    height: 43.75px;
+     width: 31.25px;
+  height: 31.25px;
     border: 1px solid black;
     box-sizing: border-box;
     cursor: pointer;
+    background-color: rgb(203, 211, 219);
+
+}
+
+h1{
+    color: rgb(16, 15, 15);
+    font-size:40px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+p{
+    color: rgb(16, 15, 15);
+    font-size:x-large;
+
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.new{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 8px 9px;
+}
+
+button{
+     padding: 10px 25px;     
+      background-color: #2d2852; 
+      color: white;           
+      border: none;           
+      border-radius: 5px;     
+      cursor: pointer;        
+      font-size: 16px; 
 
 }
