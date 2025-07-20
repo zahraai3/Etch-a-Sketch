@@ -30,7 +30,10 @@ button.addEventListener('click',()=>{
     }
     
         container.innerHTML='';
-        const size = 500/num;
+        
+        const containerSize = container.clientWidth;
+const size = containerSize / num;
+
 
         for (let i = 0; i < num * num; i++) {
 

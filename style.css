@@ -8,26 +8,29 @@ body{
   margin: 0;
 }
 
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    width: 500px;
-    height: 500px;
-    border: 2px solid black;
-    
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  width: 90vw;   
+  height: 90vw;  
+  max-width: 500px;  
+  max-height: 500px;
+  border: 2px solid black;
 }
 
-.square{
-     width: 31.25px;
-  height: 31.25px;
-    border: 1px solid black;
-    box-sizing: border-box;
-    cursor: pointer;
-    background-color: rgb(203, 211, 219);
 
+.square {
+  flex: 1 0 auto;
+  width: calc(100% / 16);
+  height: calc(100% / 16);
+  border: 1px solid black;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: rgb(203, 211, 219);
 }
+
 
 h1{
     color: rgb(16, 15, 15);
@@ -64,4 +67,16 @@ button{
       cursor: pointer;        
       font-size: 16px; 
 
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 28px;
+  }
+  p {
+    font-size: large;
+  }
+  button {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
 }
